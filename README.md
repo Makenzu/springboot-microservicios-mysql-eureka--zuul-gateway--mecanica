@@ -13,7 +13,7 @@
   - MariaDB - <https://mariadb.com/downloads/community/community-server/>
 - Herramienta para probar API rest
   - Postman - <https://www.postman.com/downloads/>
-Eclipse Marketplace (Installed)
+### Eclipse Marketplace (Installed)
 - Buildship Gradle Integration 3.0
 - Eclipse m2e - Maven support in Eclipse IDE Latest
 - Eclipse Marketplace Client 1.10.0
