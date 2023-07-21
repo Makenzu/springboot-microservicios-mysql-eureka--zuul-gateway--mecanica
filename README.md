@@ -12,16 +12,16 @@ Proyecto elaborado con Spring Tool Suite 4
       - spring-boot-devtools
       - spring-boot-starter-test
 ```
-```html
-  - commons-tecnicos
+#### commons-tecnicos
+```javascript
     - Java version: 12
     - Spring Booot Version: 2.7.13
     - Dependency:
       - spring-boot-starter-data-jpa
       - spring-boot-starter-test
 ```
-```html
-  - microservicios-eureka
+#### microservicios-eureka
+```javascript
     - Java version: 11
     - spring-cloud.version: 2021.0.8
     - Spring Booot Version: 2.7.13
@@ -34,8 +34,8 @@ Proyecto elaborado con Spring Tool Suite 4
     - plugins
       - spring-boot-maven-plugin
 ```
-```html
-  - microservicios-tecnicos
+#### microservicios-tecnicos
+```javascript
     - Java version: 12
     - spring-cloud.version: 2021.0.8
     - Spring Booot Version: 2.7.13
@@ -53,8 +53,8 @@ Proyecto elaborado con Spring Tool Suite 4
     - dependencyManagement
       - spring-cloud-dependencies
 ```
-```html
-  - microservicios-vehiculos
+#### microservicios-vehiculos
+```javascript
     - Java version: 12
     - spring-cloud.version: 2021.0.8
     - Spring Booot Version: 2.7.13
@@ -72,8 +72,8 @@ Proyecto elaborado con Spring Tool Suite 4
     - plugins
       - spring-boot-maven-plugin
 ```
-```html
-  - microservicios-zuul
+#### microservicios-zuul
+```javascript
     - Java version: 12
     - spring-cloud.version: Hoxton.SR12
     - Spring Booot Version: 2.3.12.RELEASE
