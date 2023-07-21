@@ -38,6 +38,16 @@
 - microservicios-vehiculos
   - src/main/resources/application.properties
     - Cambiar en _**spring.datasource.password**_ la contraseña que registro para el usuario root en su instalación de MySQL
+- microservicios-eureka
+  - Se encuentra configurado para usar el puerto _**8761 **_; Si esta usando el puerto con otro proceso o programa cambiar por uno sin usar. (Ej. 8762)
+- microservicios-zuul
+  - Se encuentra configurado para usar el puerto _**8090 **_; Si esta usando el puerto con otro proceso o programa cambiar por uno sin usar. (Ej. 8091)
+- MySQL
+  - Se encuentra configurado para usar el puerto _**3306 **_; Carmbiar sólo si lo tiene configurado ha otro puerto.
+  - Abrir (MySQL o MariaDB) y crear la base de datos _**db_microservicios_mecanica**_
+    ```sql
+    - CREATE DATABASE `db_microservicios_mecanica` /*!40100 COLLATE 'utf8mb4_general_ci' */
+    ```
 ### Levantar microservicios
   - Iniciar los microservicios en el siguiente orden:
   1. microservicios-eureka
