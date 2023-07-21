@@ -34,10 +34,10 @@
 ### Cambios en proyectos (Project Explorer)
 - microservicios-tecnicos
   - src/main/resources/application.properties
-    - Cambiar en spring.datasource.password la contraseña que registro para el usuario root en su instalación de MySQL 
+    - Cambiar en **spring.datasource.password** la contraseña que registro para el usuario root en su instalación de MySQL 
 - microservicios-vehiculos
   - src/main/resources/application.properties
-    - Cambiar en spring.datasource.password la contraseña que registro para el usuario root en su instalación de MySQL 
+    - Cambiar en **spring.datasource.password** la contraseña que registro para el usuario root en su instalación de MySQL 
 ### Contenido
 - Proyecto elaborado con Spring Tool Suite 4 compuesto por 6 microservicios:
 #### commons-microservicios
