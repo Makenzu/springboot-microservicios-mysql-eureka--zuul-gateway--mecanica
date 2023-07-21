@@ -2,9 +2,9 @@
 
 ### Requisitos
 - JDK (Java SE Development Kit)
-  - 8+
-  - 11 - <https://www.oracle.com/cl/java/technologies/javase/jdk11-archive-downloads.html>
-  - 12 - <https://www.oracle.com/cl/java/technologies/javase/jdk12-archive-downloads.html>
+  - Oracle 11 - <https://www.oracle.com/cl/java/technologies/javase/jdk11-archive-downloads.html>
+  - Oracle 12 - <https://www.oracle.com/cl/java/technologies/javase/jdk12-archive-downloads.html>
+  - OpenJDk 11 / 12 - <https://jdk.java.net/archive/>
 - Spring Tools IDE (Eclipse)
   - Spring Tools 4 for Eclipse - <https://spring.io/tools>
 - Maven (embedido en eclipse)
