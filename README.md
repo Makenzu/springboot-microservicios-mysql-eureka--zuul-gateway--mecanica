@@ -2,6 +2,7 @@
 
 Proyecto elaborado con Spring Tool Suite 4
 - Esta compuesto por 6 microservicios:
+```html
   - commons-microservicios
     - Java version: 12
     - Spring Booot Version: 2.7.13
@@ -10,12 +11,16 @@ Proyecto elaborado con Spring Tool Suite 4
       - spring-boot-starter-web
       - spring-boot-devtools
       - spring-boot-starter-test
+```
+```html
   - commons-tecnicos
     - Java version: 12
     - Spring Booot Version: 2.7.13
     - Dependency:
       - spring-boot-starter-data-jpa
       - spring-boot-starter-test
+```
+```html
   - microservicios-eureka
     - Java version: 11
     - spring-cloud.version: 2021.0.8
@@ -28,6 +33,8 @@ Proyecto elaborado con Spring Tool Suite 4
       - spring-cloud-dependencies
     - plugins
       - spring-boot-maven-plugin
+```
+```html
   - microservicios-tecnicos
     - Java version: 12
     - spring-cloud.version: 2021.0.8
@@ -45,6 +52,8 @@ Proyecto elaborado con Spring Tool Suite 4
       - spring-boot-maven-plugin
     - dependencyManagement
       - spring-cloud-dependencies
+```
+```html
   - microservicios-vehiculos
     - Java version: 12
     - spring-cloud.version: 2021.0.8
@@ -62,6 +71,8 @@ Proyecto elaborado con Spring Tool Suite 4
       - spring-cloud-dependencies
     - plugins
       - spring-boot-maven-plugin
+```
+```html
   - microservicios-zuul
     - Java version: 12
     - spring-cloud.version: Hoxton.SR12
@@ -76,6 +87,8 @@ Proyecto elaborado con Spring Tool Suite 4
       - spring-cloud-dependencies
     - plugins
       - spring-boot-maven-plugin
+```
+
 
 
 
