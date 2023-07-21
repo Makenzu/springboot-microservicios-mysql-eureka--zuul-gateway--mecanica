@@ -63,7 +63,9 @@
 ### Probar microservicios con Postman
   - El archivo _**query agregar tecnicos.sql**_ se puede usar para agreagar técnicos rapidamente.
   - El archivo _**Secuencia test microservicios.txt**_ contiene las secuencias para probar los microservicios (Es mas rapido usando el archivo indicado a continuacion)
-  - El archivo _**springboot-microservicios-postman.postman_collection.json**_ contiene una colección para probar los microservicios en Postman
+  - El archivo _**springboot-microservicios-postman.postman_collection.json**_ contiene una colección de llamadas (GET, POST y PUT) para probar los microservicios.
+
+
 ### Contenido
 - Proyecto elaborado con Spring Tool Suite 4 compuesto por 6 microservicios:
 #### commons-microservicios
