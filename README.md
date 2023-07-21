@@ -1,9 +1,17 @@
 # springboot-microservicios-mysql-eureka-zuul-mecanica
 
 ### Requisitos
-- JDK 11 - <https://www.oracle.com/cl/java/technologies/javase/jdk11-archive-downloads.html>
-- JDK 12
-
+- JDK (Java SE Development Kit)
+  - 8+
+  - 11 - <https://www.oracle.com/cl/java/technologies/javase/jdk11-archive-downloads.html>
+  - 12 - <https://www.oracle.com/cl/java/technologies/javase/jdk12-archive-downloads.html>
+- Spring Tools IDE (Eclipse)
+  - Spring Tools 4 for Eclipse - <https://spring.io/tools>
+- Maven (embedido en eclipse)
+- Motor de Base de datos
+  - MySql o MariaDB
+- Herramienta para probar API rest
+  - Postman
 ### Proyecto elaborado con Spring Tool Suite 4
 - Esta compuesto por 6 microservicios:
 #### commons-microservicios
