@@ -40,10 +40,10 @@
     - Cambiar en _**spring.datasource.password**_ la contraseña que registro para el usuario root en su instalación de MySQL
 ### Levantar microservicios
 - Iniciar los microservicios según el siguiente orden:
-  1. microservicios-eureka
-  1. microservicios-tecnicos
-  1. microservicios-vehiculos
-  1. microservicios-zuul
+1. microservicios-eureka
+1. microservicios-tecnicos
+1. microservicios-vehiculos
+1. microservicios-zuul
 ### Contenido
 - Proyecto elaborado con Spring Tool Suite 4 compuesto por 6 microservicios:
 #### commons-microservicios
