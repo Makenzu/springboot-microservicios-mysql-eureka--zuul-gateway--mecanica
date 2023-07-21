@@ -13,6 +13,14 @@
   - MariaDB - <https://mariadb.com/downloads/community/community-server/>
 - Herramienta para probar API rest
   - Postman - <https://www.postman.com/downloads/>
+Eclipse Marketplace (Installed)
+- Buildship Gradle Integration 3.0
+- Eclipse m2e - Maven support in Eclipse IDE Latest
+- Eclipse Marketplace Client 1.10.0
+- EGit - Git Integration for Eclipse 6.0.0
+- Java 20 Support for Eclipse 2023-03 (4.27)
+- Spring Tools 4 (aka Spring Tool Suite 4) 4.19.0.RELEASE
+- Wild Web Developer: HTML, CSS, JavaScript, TypeScript, Node.js, Angular, JSON, YAML (+Kubernetes), XML 0.13.1
 ### Preparar ambiente IDE Spring Tools 4 for Eclipse
 - Descargar el proyecto springboot-microservicios-mysql-eureka-zuul-mecanica en ZIP
 - Descomprimir el contenido en la carpeta workspace del IDE Spring Tools 4
@@ -23,7 +31,7 @@
     - Click en botón Deselect All
     - Seleccionar sólo las carpetas del proyecto springboot-microservicios-mysql-eureka-zuul-mecanica descomprimidas del ZIP
     - Click en botón Finish
-### Cambios en proyectos
+### Cambios en proyectos (Project Explorer)
 - microservicios-tecnicos
   - src/main/resources/application.properties
     - Cambiar en spring.datasource.password la contraseña que registro para el usuario root en su instalación de MySQL 
