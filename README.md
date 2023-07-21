@@ -13,7 +13,7 @@
   - MariaDB - <https://mariadb.com/downloads/community/community-server/>
 - Herramienta para probar API rest
   - Postman - <https://www.postman.com/downloads/>
-### Preparar ambiente en IDE
+### Preparar ambiente IDE Spring Tools 4 for Eclipse
 - Descargar el proyecto springboot-microservicios-mysql-eureka-zuul-mecanica en ZIP
 - Descomprimir el contenido en la carpeta workspace del IDE Spring Tools 4
 - Abrir el IDE Spring Tools 4
