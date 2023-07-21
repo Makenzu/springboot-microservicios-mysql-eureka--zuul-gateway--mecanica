@@ -13,8 +13,8 @@
   - MariaDB - <https://mariadb.com/downloads/community/community-server/>
 - Herramienta para probar API rest
   - Postman - <https://www.postman.com/downloads/>
-### Proyecto elaborado con Spring Tool Suite 4
-- Esta compuesto por 6 microservicios:
+### Contenido
+- Proyecto elaborado con Spring Tool Suite 4 compuesto por 6 microservicios:
 #### commons-microservicios
 ```javascript
     - Java version: 12
