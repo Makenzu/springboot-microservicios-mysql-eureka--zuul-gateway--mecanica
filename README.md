@@ -48,12 +48,20 @@
     ```sql
     - CREATE DATABASE `db_microservicios_mecanica` /*!40100 COLLATE 'utf8mb4_general_ci' */
     ```
+### Antes de Levantar microservicios
+- Es recomendable actualizar los proyectos
+  - Sobre un proyecto hacer click derecho, en opción _**Maven**_ escoger _**Update Project**_
+  - Se abrirá una ventana, validar que este seleccionado el proyecto que actualizará y click en boton _**OK**_
+  - Esperar que termine de actualizar.
+  - Repetir estos pasos por cada proyecto.
 ### Levantar microservicios
   - Iniciar los microservicios en el siguiente orden:
   1. microservicios-eureka
   1. microservicios-tecnicos
   1. microservicios-vehiculos
   1. microservicios-zuul
+### Probar microservicios con Postman
+
 ### Contenido
 - Proyecto elaborado con Spring Tool Suite 4 compuesto por 6 microservicios:
 #### commons-microservicios
