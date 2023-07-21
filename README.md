@@ -41,9 +41,9 @@
 ### Levantar microservicios
 - Iniciar los microservicios según el siguiente orden:
   1. microservicios-eureka
-  2. microservicios-tecnicos
-  3. microservicios-vehiculos
-  4. microservicios-zuul
+  1. microservicios-tecnicos
+  1. microservicios-vehiculos
+  1. microservicios-zuul
 ### Contenido
 - Proyecto elaborado con Spring Tool Suite 4 compuesto por 6 microservicios:
 #### commons-microservicios
