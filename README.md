@@ -37,7 +37,13 @@
     - Cambiar en _**spring.datasource.password**_ la contraseña que registro para el usuario root en su instalación de MySQL 
 - microservicios-vehiculos
   - src/main/resources/application.properties
-    - Cambiar en _**spring.datasource.password**_ la contraseña que registro para el usuario root en su instalación de MySQL 
+    - Cambiar en _**spring.datasource.password**_ la contraseña que registro para el usuario root en su instalación de MySQL
+### Levantar microservicios
+- Iniciar los microservicios según el siguiente orden:
+  1. microservicios-eureka
+  2. microservicios-tecnicos
+  3. microservicios-vehiculos
+  4. microservicios-zuul
 ### Contenido
 - Proyecto elaborado con Spring Tool Suite 4 compuesto por 6 microservicios:
 #### commons-microservicios
