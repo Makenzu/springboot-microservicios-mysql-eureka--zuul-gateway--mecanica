@@ -8,8 +8,9 @@
 - Spring Tools IDE (Eclipse)
   - Spring Tools 4 for Eclipse - <https://spring.io/tools>
 - Maven (embedido en eclipse)
-- Motor de Base de datos
-  - MySql o MariaDB
+- Motor de Base de datos (MySql o MariaDB)
+  - MySql - <https://dev.mysql.com/downloads/mysql/>
+  - MariaDB - <https://mariadb.com/downloads/community/community-server/>
 - Herramienta para probar API rest
   - Postman
 ### Proyecto elaborado con Spring Tool Suite 4
