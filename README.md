@@ -13,7 +13,7 @@
   - MariaDB - <https://mariadb.com/downloads/community/community-server/>
 - Herramienta para probar API rest
   - Postman - <https://www.postman.com/downloads/>
-### Preparar ambiente de ejecución
+### Preparar ambiente en IDE
 - Descargar el proyecto springboot-microservicios-mysql-eureka-zuul-mecanica en ZIP
 - Descomprimir el contenido en la carpeta workspace del IDE Spring Tools 4
 - Abrir el IDE Spring Tools 4
@@ -23,6 +23,13 @@
     - Click en botón Deselect All
     - Seleccionar sólo las carpetas del proyecto springboot-microservicios-mysql-eureka-zuul-mecanica descomprimidas del ZIP
     - Click en botón Finish
+### Cambios en proyectos
+- microservicios-tecnicos
+  - src/main/resources/application.properties
+    - Cambiar en spring.datasource.password la contraseña que registro para el usuario root en su instalación de MySQL 
+- microservicios-vehiculos
+  - src/main/resources/application.properties
+    - Cambiar en spring.datasource.password la contraseña que registro para el usuario root en su instalación de MySQL 
 ### Contenido
 - Proyecto elaborado con Spring Tool Suite 4 compuesto por 6 microservicios:
 #### commons-microservicios
