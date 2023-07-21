@@ -39,8 +39,7 @@
   - src/main/resources/application.properties
     - Cambiar en _**spring.datasource.password**_ la contraseña que registro para el usuario root en su instalación de MySQL
 ### Levantar microservicios
-- Iniciar los microservicios según el siguiente orden:
-
+  Iniciar los microservicios según el siguiente orden:
    1. microservicios-eureka
    1. microservicios-tecnicos
    1. microservicios-vehiculos
