@@ -1,0 +1,9 @@
+﻿INSERT INTO usuarios (nombre, apellido, email, create_at) VALUES('Rolling', 'Vilches' 'Rolling.Vilches@3it.cl', NOW());
+INSERT INTO usuarios (nombre, apellido, email, create_at) VALUES('Rachel, 'Green' 'rachel.green@3it.cl', NOW());
+INSERT INTO usuarios (nombre, apellido, email, create_at) VALUES('Kate', 'Beckinsdale' 'Kate.Beckinsdale@3it.cl', NOW());
+INSERT INTO usuarios (nombre, apellido, email, create_at) VALUES('Milla', 'Jovovich' 'Milla.Jovovich@3it.cl', NOW());
+INSERT INTO usuarios (nombre, apellido, email, create_at) VALUES('Kirsten', 'Dunst' 'Kirsten.Dunst@3it.cl', NOW());
+INSERT INTO usuarios (nombre, apellido, email, create_at) VALUES('Megan', 'Fox' 'Megan.Fox@3it.cl', NOW());
+INSERT INTO usuarios (nombre, apellido, email, create_at) VALUES('Marisa', 'Miller' 'Marisa.Miller@3it.cl', NOW());
+INSERT INTO usuarios (nombre, apellido, email, create_at) VALUES('Keely', 'Miller' 'Keely.Miller@3it.cl', NOW());
+INSERT INTO usuarios (nombre, apellido, email, create_at) VALUES('Alessandra', 'Ambrosio' 'Alessandra.Ambrosio@3it.cl', NOW());

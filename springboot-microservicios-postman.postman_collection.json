@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "18cc6df9-dfe1-4dc7-ab38-00b6521f28fa",
+		"name": "springboot-microservicios-postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26585084"
+	},
+	"item": [
+		{
+			"name": "localhost:8090/api/tecnicos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\t\"nombre\": \"test\",\r\n\t\t\t\"apellido\": \"test\",\r\n\t\t\t\"email\": \"test.test@3it.cl\"\r\n\t\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/api/tecnicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"tecnicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/api/vehiculos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\t\"nombre\": \"aaaa\",\r\n\t\t\t\"modelo\": \"aaaa\",\r\n\t\t\t\"marca\": \"aaa\"\r\n\t\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/api/vehiculos",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"vehiculos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/api/tecnicos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/tecnicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"tecnicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/api/tecnicos/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/tecnicos/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"tecnicos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/api/tecnicos/filtrar/ro",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/tecnicos/filtrar/ro",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"tecnicos",
+						"filtrar",
+						"ro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/api/vehiculos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/vehiculos",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"vehiculos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/api/vehiculos/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/vehiculos/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"vehiculos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/api/vehiculos/8",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\t\"patente\": \"vvvv\",\r\n\t\t\t\"modelo\": \"vvvvv\",\r\n\t\t\t\"marca\": \"vvvvvv\"\r\n\t\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/api/vehiculos/8",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"vehiculos",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/api/vehiculos/8/asignar-tecnicos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n\t\t\t{\r\n\t\t\t\t\"id\": 4,\r\n\t\t\t\t\"nombre\": \"Julio\",\r\n\t\t\t\t\"apellido\": \"Lopez\",\r\n\t\t\t\t\"email\": \"julio.lopez@3it.cl\",\r\n\t\t\t\t\"createAt\": \"2023-07-19T19:18:37.855+00:00\"\r\n\t\t\t}\r\n\t\t]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/api/vehiculos/8/asignar-tecnicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"vehiculos",
+						"8",
+						"asignar-tecnicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/api/vehiculos/8/eliminar-tecnico",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\t\"id\": 4,\r\n\t\t\t\"nombre\": \"Julio\",\r\n\t\t\t\"apellido\": \"Lopez\",\r\n\t\t\t\"email\": \"julio.lopez@3it.cl\",\r\n\t\t\t\"createAt\": \"2023-07-19T19:18:37.855+00:00\"\r\n\t\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/api/vehiculos/8/eliminar-tecnico",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"vehiculos",
+						"8",
+						"eliminar-tecnico"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

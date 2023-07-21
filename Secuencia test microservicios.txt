@@ -1,0 +1,65 @@
+﻿POST - crear registro tecnico
+	localhost:8090/api/tecnicos
+		BODY - RAW - JSON
+		{
+			"nombre": "Rolling",
+			"apellido": "Vilches",
+			"email": "rolling.vilches@3it.cl"
+		}
+POST - crear registro vehiculo
+	localhost:8090/api/vehiculos
+		BODY - RAW - JSON
+		{
+			"nombre": "SKHH12",
+			"modelo": "SPORTAGE",
+			"marca": "KIA"
+		}
+GET - listar tecnicos
+	localhost:8090/api/tecnicos
+GET - ver por id tecnico
+	localhost:8090/api/tecnicos/2
+GET - filtrar nombre - apellido tecnico
+	localhost:8090/api/tecnicos/filtrar/ro
+GET - listar vehiculos
+	localhost:8090/api/vehiculos
+GET - ver por id vehiculo
+	localhost:8090/api/vehiculos/3
+GET - ver vehiculo por tecnico id
+	localhost:8090/api/vehiculos/tecnico/1
+PUT - editar registro vehiculo por id
+	localhost:8090/api/vehiculos/8
+		BODY - RAW - JSON
+		{
+			"patente": "xxxx22",
+			"modelo": "ooooo",
+			"marca": "pppppppp"
+		}
+PUT - asignar tecnicos a un vehiculo
+	localhost:8090/api/vehiculos/8/asignar-tecnicos
+		BODY - RAW - JSON
+		[
+			{
+				"id": 1,
+				"nombre": "Rolling",
+				"apellido": "Vilches",
+				"email": "rolling.vilches@3it.cl",
+				"createAt": "2023-07-19T04:43:38.839+00:00"
+			},
+			{
+				"id": 4,
+				"nombre": "Julio",
+				"apellido": "Lopez",
+				"email": "julio.lopez@3it.cl",
+				"createAt": "2023-07-19T19:18:37.855+00:00"
+			}
+		]
+PUT - eliminar tecnicos de un vehiculo
+	localhost:8090/api/vehiculos/8/eliminar-tecnico
+		BODY - RAW - JSON
+		{
+			"id": 4,
+			"nombre": "Julio",
+			"apellido": "Lopez",
+			"email": "julio.lopez@3it.cl",
+			"createAt": "2023-07-19T19:18:37.855+00:00"
+		}
