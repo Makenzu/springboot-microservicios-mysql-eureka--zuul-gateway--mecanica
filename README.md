@@ -59,7 +59,7 @@
   1. microservicios-eureka
   1. microservicios-tecnicos
   1. microservicios-vehiculos
-  1. microservicios-zuul
+  1. microservicios-zuul o microservicios-gateway (recomendado, más rápido)
 ### Probar microservicios con Postman
   - El archivo _**query agregar tecnicos.sql**_ se puede usar para agreagar técnicos rapidamente.
   - El archivo _**Secuencia test microservicios.txt**_ contiene las secuencias para probar los microservicios (Es mas rapido usando el archivo indicado a continuacion)
@@ -67,7 +67,7 @@
 
 
 ### Contenido
-- Proyecto elaborado con Spring Tool Suite 4 compuesto por 6 microservicios:
+- Proyecto elaborado con Spring Tool Suite 4 compuesto por 7 microservicios:
 #### commons-microservicios
 ```javascript
     - Java version: 12
@@ -154,7 +154,21 @@
     - plugins
       - spring-boot-maven-plugin
 ```
-
+#### microservicios-gateway
+```javascript
+    - Java version: 12
+    - spring-cloud.version: 2021.0.8
+    - Spring Booot Version: 2.7.13
+    - Dependency:
+      - spring-cloud-starter-gateway
+      - spring-cloud-starter-netflix-eureka-client
+      - spring-boot-devtools
+      - spring-boot-starter-test
+    - dependencyManagement
+      - spring-cloud-dependencies
+    - plugins
+      - spring-boot-maven-plugin
+```
 
 
 
