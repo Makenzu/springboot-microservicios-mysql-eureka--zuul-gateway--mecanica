@@ -1,10 +1,16 @@
 package com.mecanica.microservicios.app.vehiculos.controllers;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -19,8 +25,25 @@ import com.mecanica.microservicios.commons.tecnicos.models.entity.Tecnico;
 @RestController
 public class VehiculoController extends CommonController<Vehiculo, IVehiculoService> {
 
+	@Value("${config.balanceador.test}")
+	private String balancealdorTest;
+	
+	@GetMapping("/balanceador-test")
+	public ResponseEntity<?> balanceadorTest() {
+		Map<String, Object> response = new HashMap<String, Object>();
+		response.put("balanceador", balancealdorTest);
+		response.put("vehiculos ", service.findAll());
+		return ResponseEntity.ok(response);
+	}
+	
 	@PutMapping("/{id}")
-	public ResponseEntity<?> editar(@RequestBody Vehiculo vehiculo, @PathVariable Long id){
+	public ResponseEntity<?> editar(@Valid @RequestBody Vehiculo vehiculo, BindingResult result, 
+									@PathVariable Long id){
+		
+		if (result.hasErrors()) {
+			return this.validar(result);
+		}
+		
 		Optional<Vehiculo> o = this.service.findById(id);
 		if (!o.isPresent()) {
 			return ResponseEntity.notFound().build();
@@ -31,7 +54,7 @@ public class VehiculoController extends CommonController<Vehiculo, IVehiculoServ
 		vehiculoDb.setMarca(vehiculo.getMarca());
 		return ResponseEntity.status(HttpStatus.CREATED).body(this.service.save(vehiculoDb));
 	}
-	
+
 	@PutMapping("/{id}/asignar-tecnicos")
 	public ResponseEntity<?> asignarTecnicos(@RequestBody List<Tecnico> tecnicos, @PathVariable Long id){
 		Optional<Vehiculo> o = this.service.findById(id);

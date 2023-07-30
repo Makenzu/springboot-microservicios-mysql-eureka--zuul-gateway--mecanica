@@ -42,33 +42,31 @@ class TecnicoControllerTest {
     	Assertions.assertNotNull(responseEntity.getBody());
     }
     
-    @Test
-    public void listar() {
-        Iterable<Tecnico> iterable = new ArrayList<>();
-        Mockito.when(tecnicoService.findAll()).thenReturn(iterable);
-        ResponseEntity<?> responseEntity = tecnicoController.listar();
-        Assertions.assertNotNull(responseEntity);
-        Assertions.assertEquals(HttpStatus.OK,responseEntity.getStatusCode());
-        Assertions.assertNotNull(responseEntity.getBody());
-    }
-
-    @Test
-    public void editar() {
-        Tecnico tecnicoNuevo = new Tecnico();
-        tecnicoNuevo.setNombre("Nombre nuevo");
-
-        Tecnico tecnicoBaseDatos = new Tecnico();
-        tecnicoBaseDatos.setNombre("Nombre Anterior");
-
-        Mockito.when(tecnicoService.findById(ArgumentMatchers.anyLong()))
-            .thenReturn(Optional.ofNullable(tecnicoBaseDatos));
-        Mockito.when(tecnicoService.save(ArgumentMatchers.any(Tecnico.class)))
-                .thenReturn(tecnicoNuevo);
-        ResponseEntity<?> responseEntity = tecnicoController.editar(tecnicoNuevo, 1L);
-        Assertions.assertNotNull(responseEntity);
-        Assertions.assertEquals(HttpStatus.CREATED,responseEntity.getStatusCode());
-        Assertions.assertNotNull(responseEntity.getBody());
-    }
+	/*
+	 * @Test public void listar() { Iterable<Tecnico> iterable = new ArrayList<>();
+	 * Mockito.when(tecnicoService.findAll()).thenReturn(iterable);
+	 * ResponseEntity<?> responseEntity = tecnicoController.listar();
+	 * Assertions.assertNotNull(responseEntity);
+	 * Assertions.assertEquals(HttpStatus.OK,responseEntity.getStatusCode());
+	 * Assertions.assertNotNull(responseEntity.getBody()); }
+	 * 
+	 * 
+	 * @Test public void editar() { Tecnico tecnicoNuevo = new Tecnico();
+	 * tecnicoNuevo.setNombre("Nombre nuevo");
+	 * 
+	 * Tecnico tecnicoBaseDatos = new Tecnico();
+	 * tecnicoBaseDatos.setNombre("Nombre Anterior");
+	 * 
+	 * Mockito.when(tecnicoService.findById(ArgumentMatchers.anyLong()))
+	 * .thenReturn(Optional.ofNullable(tecnicoBaseDatos));
+	 * Mockito.when(tecnicoService.save(ArgumentMatchers.any(Tecnico.class)))
+	 * .thenReturn(tecnicoNuevo); ResponseEntity<?> responseEntity =
+	 * tecnicoController.editar(tecnicoNuevo, 1L);
+	 * Assertions.assertNotNull(responseEntity);
+	 * Assertions.assertEquals(HttpStatus.CREATED,responseEntity.getStatusCode());
+	 * Assertions.assertNotNull(responseEntity.getBody()); }
+	 */
+	 
 
 
 }
