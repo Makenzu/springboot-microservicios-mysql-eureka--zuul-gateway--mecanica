@@ -1,4 +1,4 @@
-# springboot-microservicios-mysql-eureka-zuul-mecanica
+# springboot-microservicios-mysql-eureka-(zuul/gateway)-mecanica
 
 ### Requisitos
 - JDK (Java SE Development Kit)
@@ -40,7 +40,9 @@
     - Cambiar en _**spring.datasource.password**_ la contraseña que registro para el usuario root en su instalación de MySQL
 - microservicios-eureka
   - Se encuentra configurado para usar el puerto _**8761 **_; Si esta usando el puerto con otro proceso o programa cambiar por uno sin usar. (Ej. 8762)
-- microservicios-zuul
+- microservicios-zuul (deprecated)
+  - Se encuentra configurado para usar el puerto _**8090 **_; Si esta usando el puerto con otro proceso o programa cambiar por uno sin usar. (Ej. 8091)
+- microservicios-gateway (recomendado)
   - Se encuentra configurado para usar el puerto _**8090 **_; Si esta usando el puerto con otro proceso o programa cambiar por uno sin usar. (Ej. 8091)
 - MySQL
   - Se encuentra configurado para usar el puerto _**3306 **_; Carmbiar sólo si lo tiene configurado ha otro puerto.
@@ -59,7 +61,7 @@
   1. microservicios-eureka
   1. microservicios-tecnicos
   1. microservicios-vehiculos
-  1. microservicios-zuul o microservicios-gateway (recomendado, más rápido)
+  1. microservicios-zuul (deprecated) o microservicios-gateway (recomendado, más rápido)
 ### Probar microservicios con Postman
   - El archivo _**query agregar tecnicos.sql**_ se puede usar para agreagar técnicos rapidamente.
   - El archivo _**Secuencia test microservicios.txt**_ contiene las secuencias para probar los microservicios (Es mas rapido usando el archivo indicado a continuacion)
